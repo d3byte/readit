@@ -7,13 +7,27 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Readit</title>
   </head>
   <body>
-    <section>
-        <header></header>
-        <article></article>
-    </section>
+    <main class="redactor">
+        <header>
+          <img src="img/logo.png" alt="logo">
+        </header>
+        <div class="new-article">
+          <article class="content" contenteditable="true">
+            <h3 class="title">
+              <br/>
+            </h3>
+          </article>
+          <div class="content-placeholders">
+            <h3>Tell your story..</h3>
+          </div>
+        </div>
+      </main>
+
+      <script src="js/editor.js"></script>
   </body>
 </html>
