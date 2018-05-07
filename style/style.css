@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'ProximaNova-Light', sans-serif;
+  font-family: 'Notosans-Regular', sans-serif;
   color: #595959;
 }
 
@@ -36,18 +36,21 @@ header img[alt="logo"] {
 }
 
 .new-article .title {
-  font-family: 'Montserrat-SemiBold';
+  font-family: 'Notosans-Bold', sans-serif;
   opacity: 1;
   text-rendering: optimizelegibility;
 }
 
 .new-article h3.title {
-  font-size: 46px;
+  font-size: 42px;
+}
+
+.new-article h3, .new-article p {
+  margin: 0 0 20px 0;
 }
 
 .new-article p {
   font-size: 24px;
-  margin: 20px 0;
 }
 
 .new-article .content-placeholders {
@@ -58,7 +61,91 @@ header img[alt="logo"] {
 
 .new-article .content-placeholders h3 {
   margin: 0;
-  font-size: 46px;
+  font-size: 42px;
   opacity: 0.8;
+}
+
+.new-article .side-tooltip {
+  position: absolute;
+  top: 130px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #ccc;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.new-article .side-tooltip:hover {
+  background: #3F88C5;
+  cursor: pointer;
+}
+
+.new-article .side-tooltip:hover img:first-of-type {
+  transform: translateX(-5px);
+  opacity: 0;
+}
+
+.new-article .side-tooltip:hover img:last-of-type {
+  display: block;
+  -webkit-animation: slide-in 0.3s 1 ease-in-out;
+  -moz-animation: slide-in 0.3s 1 ease-in-out;
+  -o-animation: slide-in 0.3s 1 ease-in-out;
+  animation: slide-in 0.3s 1 ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.new-article .side-tooltip img {
+  width: 16px;
+  height: 16px;
+}
+
+.new-article .side-tooltip img:first-of-type {
+  transition: 0.3s;
+}
+
+.new-article .side-tooltip img:last-of-type {
+  width: 26px;
+  height: 26px;
+  display: none;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    -webkit-transform: translateX(-16px);
+  }
+  100% {
+    -webkit-transform: translateX(20px);
+  }
+}
+
+@-moz-keyframes slide-in {
+  0% {
+    -moz-transform: translateX(-16px);
+  }
+  100% {
+    -moz-transform: translateX(20px);
+  }
+}
+
+@-o-keyframes slide-in {
+  0% {
+    -o-transform: translateX(-16px);
+  }
+  100% {
+    -o-transform: translateX(20px);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-16px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
