@@ -29,13 +29,28 @@ const keyHandler = e => {
         paragraph.innerHTML = '<br/>'
         newArticleContainer.appendChild(paragraph)
         focusNextParagraph(newArticleContainer.lastChild)
+        setSideTooltip(newArticleContainer.lastChild)
     } else if (e.key === 'Backspace') {
         const { target } = e
         if(target.childNodes.length === 1) {
             target.childNodes[0].innerText === '\n' && e.preventDefault()
+            return
+        }
+        setSideTooltip(newArticleContainer.lastChild.previousSibling)
+    } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        const { target, key } = e
+        let selection = window.getSelection()
+        if (selection.anchorNode.tagName === 'P' || selection.anchorNode.tagName === 'H3') {
+            console.log(selection)
+            key === 'ArrowUp' ? 
+                (selection.anchorNode.previousSibling && setSideTooltip(selection.anchorNode.previousSibling)) :
+                (selection.anchorNode.nextSibling && setSideTooltip(selection.anchorNode.nextSibling))
+        } else {
+            hideSideTooltip()
         }
     }
 }
 
 newArticleContainer.addEventListener('input', checkForPlaceholders)
 newArticleContainer.addEventListener('keydown', keyHandler)
+newArticleContainer.addEventListener('selectstart', selectHandler)
