@@ -27,7 +27,7 @@ header img[alt="logo"] {
 
 .new-article {
   position: relative;
-  padding: 20px 80px 0 80px;
+  padding: 60px 80px 0 80px;
 }
 
 .new-article .content {
@@ -37,27 +37,28 @@ header img[alt="logo"] {
 
 .new-article .title {
   font-family: 'Montserrat-SemiBold';
-  opacity: 0.8;
+  opacity: 1;
   text-rendering: optimizelegibility;
 }
 
 .new-article h3.title {
-  font-size: 32px;
+  font-size: 46px;
 }
 
-.new-article h3.title .placeholder {
-  opacity: 0.6;
+.new-article p {
+  font-size: 24px;
+  margin: 20px 0;
 }
 
 .new-article .content-placeholders {
   position: absolute;
   pointer-events: none;
-  top: 20px;
+  top: 60px;
 }
 
 .new-article .content-placeholders h3 {
   margin: 0;
-  font-size: 32px;
-  opacity: 0.6;
+  font-size: 46px;
+  opacity: 0.8;
 }
 /*# sourceMappingURL=style.css.map */
