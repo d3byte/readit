@@ -26,7 +26,7 @@ const keyHandler = e => {
         const paragraph = document.createElement('p')
         paragraph.innerHTML = '<br/>'
         newArticleContainer.appendChild(paragraph)
-        rangeHandler(newArticleContainer.lastChild)
+        focusNextParagraph(newArticleContainer.lastChild)
     } else if (e.key === 'Backspace') {
         const { target } = e
         if(target.childNodes.length === 1) {
