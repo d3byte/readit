@@ -1,0 +1,66 @@
+$top-space: 20px
+    
+=article-padding
+    padding: $top-space 80px 0 80px
+
+=absolute-position-article
+    top: $top-space
+    
+
+.hide
+    display: none
+
+    
+body
+    font-family: 'ProximaNova-Light', sans-serif
+    color: #595959
+
+
+*
+    &[contenteditable="true"]
+        &:focus
+            outline: none
+    margin: 0
+
+
+main
+    width: 75%
+    margin: 0 auto
+    padding: 60px 0
+
+
+header
+    img[alt="logo"]
+        width: 200px
+
+
+.new-article
+    position: relative
+    +article-padding
+
+
+    .content
+        position: relative
+        pointer-events: all
+
+
+    .title
+        font-family: 'Montserrat-SemiBold'
+        opacity: 0.8
+        text-rendering: optimizelegibility
+
+    h3.title
+        font-size: 32px
+        .placeholder
+            opacity: 0.6
+
+    
+    .content-placeholders
+        position: absolute
+        pointer-events: none
+        +absolute-position-article
+        h3
+            margin: 0
+            font-size: 32px
+            opacity: 0.6
+        
