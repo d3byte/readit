@@ -3,6 +3,8 @@ const childNodes = newArticleContainer.childNodes
 newArticleContainer.childNodes = newArticleContainer.removeChild(childNodes[0])
 newArticleContainer.childNodes = newArticleContainer.removeChild(childNodes[childNodes.length - 1])
 
+// tooltip and all related methods are imported to global namespace from ./tooltip.js
+
 const focusNextParagraph = element => {
     let selection = window.getSelection()
     let range = document.createRange()
