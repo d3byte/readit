@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="20px" viewBox="0 0 8 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icon-hover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-311.000000, -246.000000)">
+        <g id="Title" transform="translate(251.000000, 226.000000)" fill="#3F88C5" fill-rule="nonzero">
+            <g id="Add">
+                <g id="icon---hover" transform="translate(39.000000, 15.000000)">
+                    <g id="Group" transform="translate(1.250000, 5.000000)">
+                        <path d="M20,0.325 L20,2.9375 C22.9125,3.9625 25,6.7375 25,10 C25,13.2625 22.9125,16.0375 20,17.0625 L20,19.675 C24.3125,18.5625 27.5,14.6625 27.5,10 C27.5,5.3375 24.3125,1.4375 20,0.325 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
