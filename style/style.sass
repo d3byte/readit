@@ -98,6 +98,31 @@ header
                     -o-animation: slide-in 0.3s 1 ease-in-out
                     animation: slide-in 0.3s 1 ease-in-out
                     animation-fill-mode: forwards
+        &.clicked
+            background: #3F88C5
+            img
+                &:first-of-type
+                    transform: translateX(-5px)
+                    opacity: 0
+                &:last-of-type
+                    display: block
+                    -webkit-transform: translateX(16px)
+                    -moz-transform: translateX(16px)
+                    -o-transform: translateX(16px)
+                    transform: translateX(16px)
+            &:hover
+                background: #3F88C5
+                cursor: pointer
+                img
+                    &:first-of-type
+                        transform: translateX(-5px)
+                        opacity: 0
+                    &:last-of-type
+                        display: block
+                        -webkit-animation: none
+                        -moz-animation: none
+                        -o-animation: none
+                        animation: none
         img
             width: 16px
             height: 16px
@@ -107,32 +132,79 @@ header
                 width: 26px
                 height: 26px
                 display: none
-        
+        .wrapper
+            position: relative
+            display: flex
+            background: black
+        .menu
+            position: absolute
+            display: none
+            background: #3F88C5
+            padding: 3px 15px
+            align-items: center
+            top: -17px
+            left: 24px
+            border-radius: 8px
+            -webkit-animation: slide-in 0.3s 1 ease-in-out
+            -moz-animation: slide-in 0.3s 1 ease-in-out
+            -o-animation: slide-in 0.3s 1 ease-in-out
+            animation: slide-in 0.3s 1 ease-in-out
+            animation-fill-mode: forwards
+            &:hover
+                cursor: default
+            .image-upload
+                position: relative
+                margin-right: 10px
+                overflow: hidden
+                &:hover
+                    cursor: pointer
+                input
+                    position: absolute
+                    border: none
+                    outline: none
+                    box-shadow: none
+                    background: transparent
+                    opacity: 0
+                    width: 100%
+                    height: 100%
+                    &:hover
+                        cursor: pointer 
+                        & + i
+                            color: #fff
+                            text-shadow: 0px 0px 5px #595959
+            i
+                color: #f4f4f4
+                transition: 0.3s
+                &:hover
+                    cursor: pointer
+                    color: #fff
+                    text-shadow: 0px 0px 5px #595959
 
+        
+// Animation of the side-tooltip button`s part
 @-webkit-keyframes slide-in
     0% 
         -webkit-transform: translateX(-16px)
     100% 
-        -webkit-transform: translateX(20px)
+        -webkit-transform: translateX(16px)
     
 
 @-moz-keyframes slide-in
     0% 
         -moz-transform: translateX(-16px)
     100% 
-        -moz-transform: translateX(20px)
+        -moz-transform: translateX(16px)
     
 
 @-o-keyframes slide-in
     0% 
         -o-transform: translateX(-16px)
     100% 
-        -o-transform: translateX(20px)
+        -o-transform: translateX(16px)
     
 
 @keyframes slide-in
     0% 
         transform: translateX(-16px)
     100% 
-        transform: translateX(20px)
-    
+        transform: translateX(16px)
