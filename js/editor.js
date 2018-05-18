@@ -63,4 +63,4 @@ const keyHandler = e => {
 
 newArticleContainer.addEventListener('input', inputHandler)
 newArticleContainer.addEventListener('keydown', keyHandler)
-newArticleContainer.addEventListener('selectstart', selectHandler)
+// newArticleContainer.addEventListener('selectstart', selectHandler)
